@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit Burst</title>
+    <!-- TailwindCSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/logo.png" type="image">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/9191cf9cb5.js" crossorigin="anonymous"></script>
+    <!-- Google Font-Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        .font-roboto{
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Navbar -->
+        <nav class="px-24 py-6">
+            <div class="bg-[#F85559] rounded-full px-6">
+                <div class="navbar">
+                    <div class="navbar-start">
+                      <div class="dropdown">
+                        <label tabindex="0" class="btn btn-ghost lg:hidden hover:text-[#F85559] ">
+                            <i class="fa-solid fa-bars text-yellow-50 "></i>
+                        </label>
+                        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                          <li><a class="sm:hover:bg-[#F85559] sm:hover:text-yellow-50">Home</a></li>
+                          <li><a class="sm:hover:bg-[#F85559] sm:hover:text-yellow-50">About Us</a></li>
+                          <li><a class="sm:hover:bg-[#F85559] sm:hover:text-yellow-50">Shop</a></li>
+                          <li><a class="sm:hover:bg-[#F85559] sm:hover:text-yellow-50">All Fruits</a></li>
+                        </ul>
+                      </div>
+                      <div class="flex lg:items-center md:items-center">
+                        <img class="lg:mr-3 cursor-pointer" src="images/logo.png" alt="">
+                        <h1 class="lg:text-3xl font-bold font-roboto cursor-pointer text-white text-xl">Fruit Burst</h1>
+                    </div>
+                    </div>
+                    <div class="navbar-center hidden lg:flex">
+                      <ul class="menu menu-horizontal px-1 text-white">
+                        <li><a class="hover:text-[#F85559] hover:bg-white">Home</a></li>
+                          <li><a class="hover:text-[#F85559] hover:bg-white">About Us</a></li>
+                          <li><a class="hover:text-[#F85559] hover:bg-white">Shop</a></li>
+                          <li><a class="hover:text-[#F85559] hover:bg-white">All Fruits</a></li>
+                      </ul>
+                    </div>
+                    <div class="navbar-end hidden md:flex lg:flex">
+                        <input type="search" placeholder="Search Here " class="border-none outline-none w-64 h-10 border-2 rounded-3xl p-4">
+                        <i class="fa-solid fa-magnifying-glass relative -left-10 cursor-pointer hover:text-[#F85559]"></i>
+                        
+                    </div>
+                  </div>
+            </div>
+            
+        </nav>
+
+      
+        <!-- Slider Banner -->
+        <section>
+                <div class="px-8 lg:px-24">
+                  <div class="carousel w-full">
+                    <div id="slide1" class="carousel-item relative w-full">
+                      <!-- 1 -->
+                      <div class="hero min-h-screen" style="background-image: url(/images/banner1.png);">
+                        <div class="hero-overlay bg-opacity-60 "></div>
+                        <div class="hero-content text-center text-neutral-content">
+                          <div class="">
+                            <h1 class="text-5xl font-bold text-yellow-50 mb-3 font-roboto">Exotic tastes at your <br> doorstep</h1>
+                            <p class="mb-5 text-yellow-50 font-roboto">We supply highly quality organic products</p>
+                            <button class="bg-[#F85559] w-36 h-11 rounded-xl font-bold text-white font-roboto hover:bg-white hover:border-2 hover:border-[#F85559] hover:text-[#F85559]">Shop Now</button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide4" class="btn btn-circle hover:bg-[#F85559] hover:text-white">❮</a> 
+                        <a href="#slide2" class="btn btn-circle hover:bg-[#F85559] hover:text-white">❯</a>
+                      </div>
+                    </div> 
+                    <div id="slide2" class="carousel-item relative w-full">
+                         <!-- 2 -->
+                         <div class="hero min-h-screen" style="background-image: url(/images/banner2.png);">
+                          <div class="hero-overlay bg-opacity-60 "></div>
+                          <div class="hero-content text-center text-neutral-content">
+                            <div class="">
+                                <h1 class="mb-1 text-5xl font-bold text-yellow-50 mb-3 font-roboto">Exotic tastes at your <br> doorstep</h1>
+                                <p class="mb-5 text-yellow-50 font-roboto">We supply highly quality organic products</p>
+                                <button class="bg-[#F85559] w-36 h-11 rounded-xl font-bold text-white font-roboto">Shop Now</button>
+                            </div>
+                          </div>
+                        </div>
+                      <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1" class="btn btn-circle hover:bg-[#F85559] hover:text-white">❮</a> 
+                        <a href="#slide3" class="btn btn-circle hover:bg-[#F85559] hover:text-white">❯</a>
+                      </div>
+                    </div> 
+                    <div id="slide3" class="carousel-item relative w-full">
+                         <!-- 3 -->
+                         <div class="hero min-h-screen" style="background-image: url(/images/banner3.png);">
+                          <div class="hero-overlay bg-opacity-60 "></div>
+                          <div class="hero-content text-center text-neutral-content">
+                            <div class="">
+                                <h1 class="mb-1 text-5xl font-bold text-yellow-50 mb-3 font-roboto">Exotic tastes at your <br> doorstep</h1>
+                                <p class="mb-5 text-yellow-50 font-roboto">We supply highly quality organic products</p>
+                                <button class="bg-[#F85559] w-36 h-11 rounded-xl font-bold text-white font-roboto">Shop Now</button>
+                            </div>
+                          </div>
+                        </div>
+                      <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide2" class="btn btn-circle hover:bg-[#F85559] hover:text-white">❮</a> 
+                        <a href="#slide4" class="btn btn-circle hover:bg-[#F85559] hover:text-white">❯</a>
+                      </div>
+                    </div> 
+                    <div id="slide4" class="carousel-item relative w-full">
+                         <!-- 4 -->
+                         <div class="hero min-h-screen" style="background-image: url(/images/banner4.png);">
+                          <div class="hero-overlay bg-opacity-60 "></div>
+                          <div class="hero-content text-center text-neutral-content">
+                            <div class="">
+                                <h1 class="mb-1 text-5xl font-bold text-yellow-50 mb-3 font-roboto">Exotic tastes at your <br> doorstep</h1>
+                                <p class="mb-5 text-yellow-50 font-roboto">We supply highly quality organic products</p>
+                                <button class="bg-[#F85559] w-36 h-11 rounded-xl font-bold text-white font-roboto">Shop Now</button>
+                            </div>
+                          </div>
+                        </div>
+                      <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide3" class="btn btn-circle hover:bg-[#F85559] hover:text-white">❮</a> 
+                        <a href="#slide1" class="btn btn-circle hover:bg-[#F85559] hover:text-white">❯</a>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+
+              <!-- Slider Banner Bottom Box -->
+        <div class="hidden md:flex lg:flex lg:p-32 lg:relative lg:-top-56 ">
+          <div class="bg-white flex gap-16 justify-between px-14 py-8 rounded-lg border-2">
+            <div><a href=""><img src="images/fruit1.png" alt=""></a></div>
+            <div><a href=""><img src="images/fruit2.png" alt=""></a></div>
+            <div><a href=""><img src="images/fruit3.png" alt=""></a></div>
+            <div><a href=""><img src="images/fruit4.png" alt=""></a></div>
+            <div><a href=""><img src="images/fruit5.png" alt=""></a></div>
+          </div>
+        </div>
+        </section>
+    </header>
+
+    <main>
+        <!-- Deal of the day -->
+        <section class="grid grid-cols-1 lg:grid-cols-2 lg:space-x-[285px] px-24 py-4 lg:-mt-44">
+            <!-- Title&Description -->
+            <div class="justify-center">
+                <h1 class="text-3xl font-bold font-roboto text-[#F85559] mb-5">Deal of the day</h1>
+                <p class="font-roboto">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+            </div>
+            <!-- CountDown -->
+            <div>
+                <div class="grid grid-flow-col gap-5 text-center auto-cols-max justify-center mt-5">
+                    <div class="flex flex-col">
+                      <span class="countdown font-mono text-5xl">
+                        <span class="font-roboto font-semibold text-[#F85559]" style="--value:15;"></span>
+                      </span>
+                      <p class="font-roboto">Days</p>
+                    </div> 
+                    <div class="flex flex-col ">
+                      <span class="countdown font-mono text-5xl">
+                        <span class="font-roboto font-semibold text-[#F85559]" style="--value:10;"></span>
+                      </span>
+                      <p class="font-roboto">Hours</p>
+                    </div> 
+                    <div class="flex flex-col">
+                      <span class="countdown font-mono text-5xl">
+                        <span class="font-roboto font-semibold text-[#F85559]" style="--value:24;"></span>
+                      </span>
+                      <p class="font-roboto">Minutes</p>
+                    </div> 
+                    <div class="flex flex-col">
+                      <span class="countdown font-mono text-5xl">
+                        <span class="font-roboto font-semibold text-[#F85559]" style="--value:55;"></span>
+                      </span>
+                      <p class="font-roboto">Seconds</p>
+                    </div>
+                  </div>
+            </div>
+        </section>
+        <!-- Cards -->
+        <section class="p-24">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+                <!-- Card-1 -->
+                <div class="card bg-base-100 border-2 p-6  ">
+                    <figure class="px-10 pt-10">
+                      <img src="/images/fruit6.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title mb-3">12.90$ - 18.85$</h2>
+                      <div class="w-[200px] h-0.5 bg-[#F85559] mb-3 -mt-1"></div>
+                      <p class="mb-3">Apples</p>
+                      <div class="">
+                        <div class="rating mb-3">
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" checked />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                        </div>
+                        <!-- Open the modal using ID.showModal() method -->
+                        <button class="btn bg-white border-none text-[#F85559] font-semibold hover:text-yellow-50 hover:bg-[#F85559]" onclick="my_modal_1.showModal()">Details</button>
+                        <dialog id="my_modal_1" class="modal">
+                    <form method="dialog" class="modal-box">
+                      <div class="flex justify-center"><img class="w-40 mb-5" src="images/fruit6.png" alt=""></div>
+                        <h1 class="font-bold text-2xl font-roboto">Apple</h1>
+                        <p class="py-4">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                        <div class="rating mb-3">
+                          <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                          <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" checked />
+                          <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                          <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                          <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                      </div>
+                      <div class="modal-action justify-center">
+                        <!-- if there is a button in form, it will close the modal -->
+                        <button class="btn bg-white border-[#F85559] outline-none hover:border-[#F85559] hover:text-white hover:bg-[#F85559] ">Close</button>
+                        <button class="btn bg-[#F85559] text-yellow-50 hover:bg-white hover:border hover:border-[#F85559] hover:text-[#F85559]">Buy Now</button>
+                      </div>
+                    </form>
+                        </dialog>
+                      </div>
+                    </div>
+                </div>
+                <!-- Card-2 -->
+                <div class="card bg-base-100 border-2 p-6  ">
+                    <figure class="px-10 pt-10">
+                      <img src="/images/fruit7.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title mb-3">12.90$ - 18.85$</h2>
+                      <div class="w-[200px] h-0.5 bg-[#F85559] mb-3"></div>
+                      <p class="mb-3">Orange</p>
+                      <div class="">
+                        <div class="rating mb-3">
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" checked />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                        </div>
+                        <!-- Open the modal using ID.showModal() method -->
+                        <button class="btn bg-white border-none text-[#F85559] font-semibold hover:text-yellow-50 hover:bg-[#F85559]" onclick="my_modal_2.showModal()">Details</button>
+                        <dialog id="my_modal_2" class="modal">
+                    <form method="dialog" class="modal-box">
+                      <div class="flex justify-center"><img class="w-60" src="images/fruit7.png" alt=""></div>
+                        <h1 class="font-bold text-2xl font-roboto">Orange</h1>
+                        <p class="py-4">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                        <div class="rating mb-3">
+                          <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                          <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" checked />
+                          <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                          <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                          <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                      </div>
+                      <div class="modal-action justify-center">
+                        <!-- if there is a button in form, it will close the modal -->
+                        <button class="btn bg-white border-[#F85559] outline-none hover:border-[#F85559] hover:text-white hover:bg-[#F85559] ">Close</button>
+                        <button class="btn bg-[#F85559] text-yellow-50 hover:bg-white hover:border hover:border-[#F85559] hover:text-[#F85559]">Buy Now</button>
+                      </div>
+                    </form>
+                        </dialog>
+                      </div>
+                    </div>
+                  </div>
+                <!-- Card-3 -->
+                <div class="card bg-base-100 border-2 p-6  ">
+                    <figure class="px-10 pt-10">
+                      <img src="/images/fruit8.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title mb-3">12.90$ - 18.85$</h2>
+                      <div class="w-[200px] h-0.5 bg-[#F85559] mb-3"></div>
+                      <p class="mb-3">Red Dragon</p>
+                      <div class="">
+                        <div class="rating mb-3">
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" checked />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                        </div>
+                        <!-- Open the modal using ID.showModal() method -->
+                        <button class="btn bg-white border-none text-[#F85559] font-semibold hover:text-yellow-50 hover:bg-[#F85559]" onclick="my_modal_3.showModal()">Details</button>
+                        <dialog id="my_modal_3" class="modal">
+                    <form method="dialog" class="modal-box">
+                      <div class="flex justify-center"><img class="w-60" src="images/fruit8.png" alt=""></div>
+                        <h1 class="font-bold text-2xl font-roboto">Red Dragon</h1>
+                        <p class="py-4">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                        <div class="rating mb-3">
+                          <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                          <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" checked />
+                          <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                          <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                          <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                      </div>
+                      <div class="modal-action justify-center">
+                        <!-- if there is a button in form, it will close the modal -->
+                        <button class="btn bg-white border-[#F85559] outline-none hover:border-[#F85559] hover:text-white hover:bg-[#F85559] ">Close</button>
+                        <button class="btn bg-[#F85559] text-yellow-50 hover:bg-white hover:border hover:border-[#F85559] hover:text-[#F85559]">Buy Now</button>
+                      </div>
+                    </form>
+                        </dialog>
+                      </div>
+                    </div>
+                  </div>
+                <!-- Card-4 -->
+                <div class="card bg-base-100 border-2 p-6  ">
+                    <figure class="px-10 pt-10">
+                      <img src="/images/fruit9.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title mb-3">12.90$ - 18.85$</h2>
+                      <div class="w-[200px] h-0.5 bg-[#F85559] mb-3"></div>
+                      <p class="mb-3">Banana</p>
+                      <div class="">
+                        <div class="rating mb-3">
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" checked />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                        </div>
+                        <!-- Open the modal using ID.showModal() method -->
+                        <button class="btn bg-white border-none text-[#F85559] font-semibold hover:text-yellow-50 hover:bg-[#F85559]" onclick="my_modal_4.showModal()">Details</button>
+                        <dialog id="my_modal_4" class="modal">
+                    <form method="dialog" class="modal-box">
+                      <div class="flex justify-center"><img class="w-60" src="images/fruit9.png" alt=""></div>
+                        <h1 class="font-bold text-2xl font-roboto">Banana</h1>
+                        <p class="py-4">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                        <div class="rating mb-3">
+                          <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                          <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" checked />
+                          <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                          <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                          <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                      </div>
+                      <div class="modal-action justify-center">
+                        <!-- if there is a button in form, it will close the modal -->
+                        <button class="btn bg-white border-[#F85559] outline-none hover:border-[#F85559] hover:text-white hover:bg-[#F85559] ">Close</button>
+                        <button class="btn bg-[#F85559] text-yellow-50 hover:bg-white hover:border hover:border-[#F85559] hover:text-[#F85559]">Buy Now</button>
+                      </div>
+                    </form>
+                        </dialog>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="my-14 flex justify-center">
+                <button class="bg-[#F85559] w-36 h-11 rounded-xl font-bold text-white font-roboto hover:bg-white hover:border hover:border-[#F85559] hover:text-[#F85559]">Shop All</button>
+            </div>
+        </section>
+        <!-- Team Section -->
+        <section class="lg:px-24 lg:mb-32">
+          <div class="hero min-h-screen" style="background-image: url(/images/banner1.png);">
+              <div class="hero-overlay bg-opacity-60"></div>
+              <div class="hero-content text-center text-neutral-content">
+                <div class="">
+                  <h1 class="mb-5 text-5xl font-bold text-white">Meet the team section</h1>
+                  <p class="mb-10 text-white">Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br> Latin literature from 45 BC, making it over 2000 years old.</p>
+      <!-- Team-Photos -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:gap-28">
+      <div class="w-30 justify-center text-center">
+        <div class="flex justify-center"><img class="lg:mb-3" src="images/member1.png" alt=""></div>
+        <h2 class="text-lg font-semibold font-roboto text-white mb-1">Awlad Hossain</h2>
+        <p class="text-white font-roboto mb-3">Fruits Expert</p>
+        <div class="container flex gap-3 justify-center">
+          <div class="bg-[#F85559] w-6 rounded-full text-white hover:bg-white hover:text-[#F85559]"><a href=""><i class="fa-brands fa-facebook-f"></i></a></div>
+          <div class="bg-[#F85559] w-6 rounded-full text-white hover:bg-white hover:text-[#F85559]"><a href=""><i class="fa-brands fa-twitter"></i></a></div>
+          <div class="bg-[#F85559] w-6 rounded-full text-white hover:bg-white hover:text-[#F85559]"><a href=""><i class="fa-brands fa-linkedin-in"></i></a></div>
+        </div>
+      </div>
+      <div class="w-30 justify-center text-center">
+        <div class="flex justify-center mt-5"><img class="mb-3" src="images/member2.png" alt=""></div>
+        <h2 class="text-lg font-semibold font-roboto text-white mb-1">Safia Chowdhury</h2>
+        <p class="text-white font-roboto mb-3">Fruits Expert</p>
+        <div class="container flex gap-3 justify-center">
+          <div class="bg-[#F85559] w-6 rounded-full text-white hover:bg-white hover:text-[#F85559]"><a href=""><i class="fa-brands fa-facebook-f"></i></a></div>
+          <div class="bg-[#F85559] w-6 rounded-full text-white hover:bg-white hover:text-[#F85559]"><a href=""><i class="fa-brands fa-twitter"></i></a></div>
+          <div class="bg-[#F85559] w-6 rounded-full text-white hover:bg-white hover:text-[#F85559]"><a href=""><i class="fa-brands fa-linkedin-in"></i></a></div>
+        </div>
+      </div>
+      <div class="w-30 justify-center text-center">
+        <div class="flex justify-center mt-5"><img class="mb-3" src="images/member3.png" alt=""></div>
+        <h2 class="text-lg font-semibold font-roboto text-white mb-1">Rokib Hossain</h2>
+        <p class="text-white font-roboto mb-3">Fruits Expert</p>
+        <div class="container flex gap-3 justify-center">
+          <div class="bg-[#F85559] w-6 rounded-full text-white hover:bg-white hover:text-[#F85559]"><a href=""><i class="fa-brands fa-facebook-f"></i></a></div>
+          <div class="bg-[#F85559] w-6 rounded-full text-white hover:bg-white hover:text-[#F85559]"><a href=""><i class="fa-brands fa-twitter"></i></a></div>
+          <div class="bg-[#F85559] w-6 rounded-full text-white hover:bg-white hover:text-[#F85559]"><a href=""><i class="fa-brands fa-linkedin-in"></i></a></div>
+        </div>
+      </div>
+      <div class="w-30 justify-center text-center">
+        <div class="flex justify-center mt-5"> <img class="mb-3" src="images/member4.png" alt=""></div>
+        <h2 class="text-lg font-semibold font-roboto text-white mb-1">Chaity Sarkar</h2>
+        <p class="text-white font-roboto mb-3">Fruits Expert</p>
+        <div class="container flex gap-3 justify-center">
+          <div class="bg-[#F85559] w-6 rounded-full text-white hover:bg-white hover:text-[#F85559]"><a href=""><i class="fa-brands fa-facebook-f"></i></a></div>
+          <div class="bg-[#F85559] w-6 rounded-full text-white hover:bg-white hover:text-[#F85559]"><a href=""><i class="fa-brands fa-twitter"></i></a></div>
+          <div class="bg-[#F85559] w-6 rounded-full text-white hover:bg-white hover:text-[#F85559]"><a href=""><i class="fa-brands fa-linkedin-in"></i></a></div>
+        </div>
+      </div>
+    </div>
+                </div>
+            </div>
+          </div>
+      </section>
+      
+
+      <!-- Why Choose Us -->
+      <section class="lg:mb-16">
+        <h1 class="text-4xl font-bold font-roboto text-center mb-4 mt-8 text-[#F85559]">Why Choose Us</h1>
+        <p class="text-center font-roboto mb-10">Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br> Latin literature from 45 BC, making it over 2000 years old.</p>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 px-24">
+            <!-- Left Side -->
+            <div class="lg:mr-8">
+  <div class="flex gap-6 mb-12">
+    <div class="bg-[#F85559] w-10 h-10 flex justify-center items-center rounded-full text-white"><a href=""><i class="fa-solid fa-users"></i></a></div>
+    <div>
+      <h1 class="text-xl font-semibold font-roboto mb-2">Dedicated Team</h1>
+      <div class="w-24 h-0.5 bg-slate-500 mb-2"></div>
+      <p>Professional employees are there to pick <br> the most amazing and fresh fruits.</p>
+    </div>
+  </div>
+  <div class="flex gap-6 mb-12">
+    <div class="bg-[#F85559] w-10 h-10 flex justify-center items-center rounded-full text-white"><a href=""><i class="fa-solid fa-heart-circle-check"></i></a></div>
+    <div>
+      <h1 class="text-xl font-semibold font-roboto mb-2">Fresh is Best</h1>
+      <div class="w-24 h-0.5 bg-slate-500 mb-2"></div>
+      <p>Professional employees are there to pick <br> the most amazing and fresh fruits.</p>
+    </div>
+  </div>
+  <div class="flex gap-6 mb-12">
+    <div class="bg-[#F85559] w-10 h-10 flex justify-center items-center rounded-full text-white"><a href=""><i class="fa-solid fa-stamp"></i></a></div>
+    <div>
+      <h1 class="text-xl font-semibold font-roboto mb-2">Gift Certificates</h1>
+      <div class="w-24 h-0.5 bg-slate-500 mb-2"></div>
+      <p>Professional employees are there to pick <br> the most amazing and fresh fruits.</p>
+    </div>
+  </div>
+            </div>
+
+            <!-- Center-Image -->
+            <div class="mb-9">
+  <img src="images/whychoose1.png" alt="">
+            </div>
+
+            <!-- Right Side -->
+            <div class="ml-8">
+  <div class="flex gap-6 mb-12">
+    <div>
+      <h1 class="text-xl font-semibold font-roboto text-end mb-2">Integrated Supplier</h1>
+      <div class="w-24 h-0.5 bg-slate-500 float-right mb-2"></div>
+      <p class="text-end mt-5">Professional employees are there to pick <br> the most amazing and fresh fruits.</p>
+    </div>
+    <div class="bg-[#F85559] w-10 h-10 flex justify-center items-center rounded-full text-white"><a href=""><i class="fa-solid fa-truck-field"></i></a></div>
+  </div>
+  <div class="flex gap-6 mb-12">
+    <div>
+      <h1 class="text-xl font-semibold font-roboto text-end mb-2">Sustainable Practice</h1>
+      <div class="w-24 h-0.5 bg-slate-500 float-right mb-2"></div>
+      <p class="text-end mt-5">Professional employees are there to pick <br> the most amazing and fresh fruits.</p>
+    </div>
+    <div class="bg-[#F85559] w-10 h-10 flex justify-center items-center rounded-full text-white"><a href=""><i class="fa-solid fa-ice-cream"></i></a></div>
+  </div>
+  <div class="flex gap-6 mb-12">
+    <div>
+      <h1 class="text-xl font-semibold font-roboto text-end mb-2">The Benefits Only</h1>
+      <div class="w-24 h-0.5 bg-slate-500 float-right mb-2"></div>
+      <p class="text-end mt-5">Professional employees are there to pick <br> the most amazing and fresh fruits.</p>
+    </div>
+    <div class="bg-[#F85559] w-10 h-10 flex justify-center items-center rounded-full text-white"><a href=""><i class="fa-solid fa-thumbs-up"></i></a></div>
+  </div>
+  
+  
+            </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-slate-800 p-16">
+      <!-- Footer Logo -->
+      <div class="flex items-center justify-center mb-10">
+        <img class="mr-3 cursor-pointer" src="images/logo.png" alt="">
+        <h1 class="text-3xl font-bold font-roboto cursor-pointer text-yellow-50">Fruit Burst</h1>
+    </div>
+      <!-- Contacts -->
+      <div class="flex flex-wrap md:flex lg:flex gap-4 lg:gap-20 justify-center mb-8 text-yellow-50">
+          <p><a href="" class="hover:underline underline-offset-2 hover:text-[#ff8688]">Home</a></p>
+          <p><a href="" class="hover:underline underline-offset-2 hover:text-[#ff8688]">About Us</a></p>
+          <p><a href="" class="hover:underline underline-offset-2 hover:text-[#ff8688]">Shop</a</p>
+          <p><a href="" class="hover:underline underline-offset-2 hover:text-[#ff8688]">All Fruits</a></p>
+          <p><a href="" class="hover:underline underline-offset-2 hover:text-[#ff8688]">Support</a></p>
+          <p><a href="" class="hover:underline underline-offset-2 hover:text-[#ff8688]">My Account</a></p>
+      </div>
+      <!-- Social Media Icons -->
+      <div class="flex gap-5 lg:gap-20 md:gap-20 justify-center text-center">
+        <div class="bg-[#F85559] w-6 rounded-full text-white hover:bg-white hover:text-[#F85559]"><a href=""><i class="fa-brands fa-facebook-f"></i></a></div>
+        <div class="bg-[#F85559] w-6 rounded-full text-white hover:bg-white hover:text-[#F85559]" ><a href=""><i class="fa-brands fa-twitter"></i></a></div>
+        <div class="bg-[#F85559] w-6 rounded-full text-white hover:bg-white hover:text-[#F85559]"><a href=""><i class="fa-brands fa-linkedin-in"></i></a></div>
+        <div class="bg-[#F85559] w-6 rounded-full text-white hover:bg-white hover:text-[#F85559]"><a href=""><i class="fa-brands fa-instagram"></i></a></div>
+        <div class="bg-[#F85559] w-6 rounded-full text-white hover:bg-white hover:text-[#F85559]"><a href=""><i class="fa-brands fa-whatsapp"></i></a></div>
+      </div>
+  </footer>
+    
+</body>
+</html>
